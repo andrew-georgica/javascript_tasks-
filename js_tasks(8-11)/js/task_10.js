@@ -10,7 +10,7 @@
 var num = prompt("Enter a number please:");
 var arr = [];
 
-arr[0] = 0;
+arr[0] = 1;
 arr[1] = 1;
 
 // ------------------------------------------
@@ -22,7 +22,7 @@ function checkArray(arr) {
     for(i = 2; i <= num; i++) {
         arr[i] = arr[i-2] + arr[i-1];
     }
-    return arr.slice(2);
+    return arr.slice(0, arr.length - 1);
 }
 
 function toString() {
